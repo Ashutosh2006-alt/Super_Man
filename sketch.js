@@ -25,7 +25,6 @@ function preload() {
   superManfly = loadAnimation("images/superMan/fly/1.png", "images/superMan/fly/2.png");
   monsterIdle = loadAnimation("images/monster/idle/1.png", "images/monster/idle/2.png", "images/monster/idle/3.png", "images/monster/idle/4.png");
   title = loadImage("images/title.png");
-  logoimg = loadImage("images/logo.png");
 }
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -35,10 +34,6 @@ function setup() {
 
   logo = createSprite(width / 2, height / 2, 1, 1);
   logo.scale = 0.3;
-
-  icon = createSprite(150, 50, 1, 1);
-  icon.addImage(logoimg);
-  icon.scale = 0.1;
 
   car = createSprite(-300, height - 100, 1, 1);
   car.addImage(carImg);
